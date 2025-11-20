@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>position practice</title>
+        <style>
+            .overlay{
+                background-color: rgba(0, 0, 0, 0.5);
+                display: flex;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .modal{
+                background-color: blanchedalmond;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-radius: 5px;
+                width: 300px;
+
+            }
+
+            .title{
+                margin-bottom: 12px;
+                font-family: arial;
+                font-size: 24px;
+                font-weight: bold;
+                
+            }
+
+            .content{
+                font-family: arial;
+                margin-bottom: 12px;
+            }
+        </style>
+    </head>
+    <body style="
+        height: 3000px;
+    ">
+        <div style="
+            background-color: green;
+            color: white;
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            width: 100px;
+            height: 3000px;
+        ">bottomright</div>
+
+        <div class="overlay">
+            <div class="modal">
+                <div class="title">Modal Title</div>
+                <div class="content">This is a modal</div>
+                <button>Close</button>
+            </div>
+        </div>
+    </body>
+</html>
